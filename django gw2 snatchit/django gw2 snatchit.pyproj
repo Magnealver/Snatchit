@@ -44,12 +44,15 @@
     <Compile Include="django_gw2_snatchit\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DefaultTool\static\site.css" />
     <Content Include="DefaultTool\templates\DefaultTool\index.html" />
+    <Content Include="DefaultTool\templates\DefaultTool\layout.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DefaultTool\" />
     <Folder Include="DefaultTool\migrations\" />
+    <Folder Include="DefaultTool\static\" />
     <Folder Include="DefaultTool\templates\" />
     <Folder Include="DefaultTool\templates\DefaultTool\" />
     <Folder Include="django_gw2_snatchit\" />
