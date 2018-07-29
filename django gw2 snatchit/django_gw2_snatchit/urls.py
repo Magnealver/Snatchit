@@ -3,6 +3,7 @@ Definition of urls for django_gw2_snatchit.
 """
 
 from django.conf.urls import include, url
+import DefaultTool.views
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -18,4 +19,6 @@ urlpatterns = [
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', DefaultTool.views.index, name='index'),
+    url(r'^home$', DefaultTool.views.index, name='home'),
 ]
