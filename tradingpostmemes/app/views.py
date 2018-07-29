@@ -25,7 +25,8 @@ def home(request):
             'title':'Home Page',
             'year':datetime.now().year,
             'id':listingdata['id'],
-            'lowest sell':listingdata['sells'],
+            'lowestsell':listingdata['sells'][0]['unit_price'],
+            'nextlowestsell':listingdata['sells'][1]['unit_price'],
         }
     )
 
